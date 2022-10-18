@@ -1,0 +1,2 @@
+export const MIN_NUM_ALTERED = 'MIN_NUM_ALTERED';
+export const MAX_NUM_ALTERED = 'MAX_NUM_ALTERED';
