@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Check it online:
+URL: https://lambent-swan-00f579.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
