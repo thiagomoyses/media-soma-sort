@@ -4,3 +4,10 @@ export function changeMinNumber(newNumber){
         payload: newNumber
     }
 }
+
+export function changeMaxNumber(newNumber){
+    return {
+        type: 'MAX_NUM_ALTERED',
+        payload: newNumber
+    }
+}
