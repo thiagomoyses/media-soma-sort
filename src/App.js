@@ -1,21 +1,18 @@
 import './App.css';
-import Gap from './components/Gap';
-import Average from './components/Average';
-import Sort from './components/Sort';
-import Sum from './components/Sum';
+import Components from './components/index';
 
 function App() {
   return (
     <div className="App">
       <h1>Media, Soma, Sort</h1>
       <div className="row">
-        <Gap>X</Gap>
+        <Components.Gap />
       </div>
 
       <div className="row">
-        <Average />
-        <Sum />
-        <Sort />
+        <Components.Average />
+        <Components.Sum />
+        <Components.Sort />
       </div>
     </div>
   );
