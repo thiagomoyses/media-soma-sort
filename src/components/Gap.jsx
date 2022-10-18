@@ -3,9 +3,9 @@ import './gap.css';
 import { connect } from 'react-redux';
 
 import Card from './Card';
+import { changeMinNumber } from '../store/actions/numbers.actionCreator';
 
 function Gap(props){
-
     const { min, max } = props;
 
     return(
@@ -13,7 +13,11 @@ function Gap(props){
             <div className="gap">
                 <span>
                     <strong>Min:</strong>
-                    <input type="number" value={ min } readOnly/>
+                    <input 
+                        type="number" 
+                        value={ min } 
+                        onChange={e => props.changeMin(+e.target.value)}
+                    />
                 </span>
                 <span>
                     <strong>Max:</strong>
@@ -31,4 +35,17 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps)(Gap);
+function mapDispatchToProps(dispatch){
+    return {
+        changeMin(newNumber){
+            const action = changeMinNumber(newNumber);
+            dispatch(action);
+        }
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+    
+    )(Gap);
