@@ -2,19 +2,11 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 const reducers = combineReducers({
     numbers: (state, action) => {
-        console.log(state, ' ', action);
+        // console.log(state, ' ', action);
         return {
-            min: 1,
-            max: 10
+            min: 7,
+            max: 31
         }
-    },
-    names: (state, action) => {
-        console.log(state, ' ', action);
-        return [
-            'ana',
-            'bia',
-            'carlos'
-        ]
     }
 });
 
