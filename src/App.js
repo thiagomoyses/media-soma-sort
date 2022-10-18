@@ -4,7 +4,7 @@ import Components from './components/index';
 function App() {
   return (
     <div className="App">
-      <h1>Media, Soma, Sort</h1>
+      <h1>Operations</h1>
       <div className="row">
         <Components.Gap />
       </div>
